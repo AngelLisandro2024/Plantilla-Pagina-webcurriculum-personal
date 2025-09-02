@@ -1,0 +1,273 @@
+/* AQUI PODEMOS CAMBIAR TODO EL FONDO DE LA PAGINA LO PUSE EN COMENTARIO
+ PARA NO CAMBIAR EL QUE YA TENGO */
+
+ /* body.bg-dark {
+  background-color: #1f4557 !important;
+} */
+
+/* AQUI PODEMOS CAMBIAR TODO EL FONDO DE LA PAGINA LO PUSE EN COMENTARIO 
+PARA NO CAMBIAR EL QUE YA TENGO */
+
+/* ESTO LO VAMOS A USAR SOLO SI QUEREMOS CAMBIAR TODO EL TEXTO */
+/*
+
+body {
+  color: #1996e9;
+  font-family: 'Poppins', sans-serif; 
+  font-size: 16px; 
+  h1, h2, h3, h4, h5, h6 {
+  color: #ffcc00; 
+}
+
+a {
+  color: #25D366; 
+  text-decoration: none;
+}
+
+a:hover {
+  color: #1ebe5b; 
+}
+
+}
+
+p {
+  color: #ffcc00;
+}
+
+p.text-secondary-emphasis,
+p.text-body-emphasis,
+p.text-muted,
+p.lead,
+p[class*="text-"] {
+  color: #ffcc00 !important;
+}
+  
+*/
+/* ESTO LO VAMOS A USAR SOLO SI QUEREMOS CAMBIAR TODO EL TEXTO */
+
+:root{
+  --bg: #fefefe;
+
+/* color de las cartas de servicio */
+  --panel: #ffffff;
+/* color de las cartas de servicio */
+
+  --text: #2c2c2c;
+  --muted: #666e75;
+
+/* color de los iconos con de Entrega puntual, Atencion Personalizada, Precios en USD */
+  --accent: #ff6f61;
+/* color de los iconos con de Entrega puntual, Atencion Personalizada, Precios en USD */
+
+/* color del icono de precio en servicios */
+  --accent-2: #28ff28;
+/* color del icono de precio en servicios */
+
+/* color del degradado en los iconos */
+  --ring: rgba(255,111,97,.25);
+/* color del degradado en los iconos */
+}
+
+html, body{ 
+  background: var(--bg); 
+  color: var(--text); 
+}
+
+.text-accent{ color: var(--accent) !important; }
+
+/* color de las letras al principio en el titulo */
+.text-secondary-emphasis{ color:#f6f7f6 !important; }
+/* color de las letras al principio en el titulo */
+
+.border-accent-subtle{ border-color: rgba(157, 36, 25, 0.3) !important; }
+
+.btn-accent{
+  
+  /* color de la ver servicios al principio */
+  --bs-btn-color:#ffffff;
+  /* color de la ver servicios al principio */
+
+  --bs-btn-bg:linear-gradient(135deg,var(--accent),var(--accent-2));
+  --bs-btn-border-color:transparent;
+  --bs-btn-hover-color:#ffffff;
+  --bs-btn-hover-bg:linear-gradient(135deg,#ff8a80,#64b5f6);
+  --bs-btn-hover-border-color:transparent;
+  --bs-btn-focus-shadow-rgb:255,111,97;
+  border:0;
+}
+.shadow-accent{ box-shadow: 0 10px 30px -10px var(--ring); }
+
+/* color del texto principal en barra de navegación */
+
+.navbar-brand {
+  color: #ffffff; /* Texto naranja */
+  font-size: 1.2rem;
+}
+
+/* color del texto principal en barra de navegación */
+
+/* color del texto en barra de navegación */
+
+.nav-link {
+  color: rgb(255, 255, 255);
+}
+
+/* color del texto en barra de navegación */
+
+/* color del texto en barra de navegación el de whatsapp */
+
+.btn-accent {
+  background-color: #25D366;
+  color: white;
+}
+
+/* color del texto en barra de navegación el de whatsapp */
+
+.blur-nav{
+  backdrop-filter: saturate(150%) blur(10px);
+
+  /* color de la barra de navegación */
+  background: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%) !important;
+  /* color de la barra de navegación */
+
+  border-bottom: 1px solid rgba(0,0,0,.05);
+}
+
+.hero-section{
+  padding-top: 7rem;
+  padding-bottom: 2rem;
+  background:
+    radial-gradient(1000px 500px at 120% -10%, rgba(248, 249, 250, 0.15), transparent 60%),
+    radial-gradient(800px 400px at -10% 10%, rgba(255,111,97,.15), transparent 60%);
+}
+.hero-gradient{
+  width: 1400px; height: 1400px; pointer-events: none;
+
+
+  /* color de degradado de fondo del principio */
+  background: radial-gradient(closest-side, rgba(250, 6, 6, 0.1), transparent 70%);
+  /* color de degradado de fondo del principio */
+
+  filter: blur(60px); opacity:.7;
+}
+.py-6{ padding-top: 5rem; padding-bottom: 5rem; }
+
+.glass{
+  background: var(--panel);
+  border: 1px solid rgba(0,0,0,.05);
+  box-shadow: 0 4px 20px rgba(0,0,0,.05);
+}
+
+.object-cover{ object-fit: cover; }
+
+.bg-gradient-subtle{
+
+  /* color del fondo de portafolio */
+  background: linear-gradient(180deg, rgba(244, 237, 236, 0.05), rgba(66,165,245,.05));
+  /* color del fondo de portafolio */
+}
+
+.icon-badge{
+  width: 44px; height: 44px; border-radius: 10px;
+  display: grid; place-items: center;
+  background: linear-gradient(135deg, rgba(255,111,97,.15), rgba(66,165,245,.15));
+  color: var(--accent);
+  border: 1px solid rgba(255,111,97,.25);
+}
+.price-tag{
+  font-weight: 700;
+  background: linear-gradient(135deg,var(--accent),var(--accent-2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 1.25rem;
+}
+
+.service-card{
+  transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease;
+  border-radius: 1rem;
+}
+.service-card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px -10px var(--ring);
+  border-color: rgba(255,111,97,.3);
+}
+
+.gallery-card{
+  border: 1px solid rgba(0,0,0,.05);
+  transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease, filter .35s ease;
+}
+
+.gallery-card:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px -10px var(--ring);
+  border-color: rgba(255,111,97,.3);
+  filter: saturate(1.05);
+}
+
+/* Tipografía y detalles */
+.card-title{ letter-spacing: .2px; }
+.rounded-bottom-4{ border-bottom-left-radius: 1rem; border-bottom-right-radius: 1rem; }
+
+.hero-card.glass,
+.img-fluid {
+  background-color: transparent !important;
+}
+
+.object-cover {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.hero-card img {
+  transition: transform 0.4s ease;
+}
+
+.hero-card img:hover {
+  transform: scale(1.05);
+}
+
+.card-img-bottom {
+  width: 216px;   /* Ancho fijo */
+  height: 400px;  /* Alto fijo */
+  object-fit: cover; /* Mantiene el recorte para que no se deformen */
+  display: block;       /* Asegura que se comporte como bloque */
+  margin-left: auto;    /* Margen automático izquierda */
+  margin-right: auto;   /* Margen automático derecha */
+  margin-top: 100;       /* Elimina espacio arriba */
+}
+
+.card-body {
+  padding-bottom: 1rem; /* Reduce el espacio inferior del texto */
+}
+.card-body {
+  padding-bottom: 0; /* ya no hay relleno inferior */
+}
+
+.card-body > *:last-child {
+  margin-bottom: 0; /* elimina margen inferior del último texto */
+}
+
+.card-img-bottom {
+  margin-top: 14px; /* valor negativo para acercar la imagen al texto */
+}
+
+/* aqui cambiamos el color del footer lo ultimo de todo */
+footer .container span,
+footer .container a {
+  color: #ffffff !important; /* ejemplo dorado */
+}
+
+/* aqui cambiamos el color del footer lo ultimo de todo */
+
+.card-img-bottom {
+  width: 100%;       /* Que ocupe todo el ancho de la card */
+  height: auto;      /* Mantiene proporción original */
+  object-fit: cover; /* Corta y ajusta para cubrir todo el contenedor */
+  display: block;    /* Elimina espacios en línea */
+}
+
+
+
+
